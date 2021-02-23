@@ -1,0 +1,87 @@
+header {
+  width: 100vw;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header-logoandsearch_container {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_logo-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.squareTwo {
+  transform: translateY(-5px);
+}
+.squareTree {
+  transform: translateY(5px);
+}
+
+.Header_search-container {
+  width: 50%;
+}
+
+.Header_search-container input {
+  width: 100%;
+  padding: 0.3rem;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  color: var(--hover);
+  -webkit-appearance: none;
+  text-transform: capitalize;
+}
+
+.Header_search-container input::placeholder {
+  color: var(--hover);
+}
+
+.Header-genders_container {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.Header-genders_container::-webkit-scrollbar {
+  display: none;
+}
+
+.Header-genders_container button {
+  width: auto;
+  margin: 0 0.3rem;
+  padding: 0.5rem;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.Header-genders_link {
+  color: #fff;
+}
