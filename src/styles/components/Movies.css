@@ -1,0 +1,93 @@
+.Movies {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Movies-title {
+  font-size: 3.5rem;
+  color: var(--hover);
+}
+
+.Movies-container {
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: both;
+  scrollbar-width: none;
+}
+
+.Movies-container::-webkit-scrollbar {
+  display: none;
+}
+
+.Movies-figure {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in-out 0.4s;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.Movies-link {
+  width: 12rem;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.Movies-image {
+  width: 100%;
+}
+
+.Movies-caption {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Movies-caption_title_container {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.Movies-caption_title_container p {
+  font-size: 1.2rem;
+  display: none;
+}
+
+.Movies-caption_starandqualification_container {
+  width: 80%;
+  height: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Movies-caption_star_container {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Movies-caption_star {
+  height: 100%;
+}
+
+.Movies-caption_qualification_container {
+  color: var(--yellow);
+}

@@ -1,11 +1,3 @@
-header {
-  width: 100vw;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .Header-logoandsearch_container {
   width: 100%;
   margin-bottom: 2rem;
@@ -21,13 +13,17 @@ header {
   align-items: center;
 }
 
+.Header_logo-container h1 {
+  display: flex;
+}
+
 .square {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin: 0.1rem;
   background-color: #000;
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -44,7 +40,7 @@ header {
 
 .Header_search-container input {
   width: 100%;
-  padding: 0.3rem;
+  padding: 0.4rem;
   background-color: var(--secondary);
   border: none;
   border-radius: 0.5rem;
@@ -52,6 +48,7 @@ header {
   color: var(--hover);
   -webkit-appearance: none;
   text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .Header_search-container input::placeholder {
@@ -76,12 +73,16 @@ header {
   width: auto;
   margin: 0 0.3rem;
   padding: 0.5rem;
+  font-size: 1.5rem;
   background-color: var(--secondary);
   border: none;
   border-radius: 0.5rem;
   outline: none;
+  cursor: pointer;
+  color: #fff;
 }
 
-.Header-genders_link {
-  color: #fff;
+.Header-genders_container button:focus {
+  background-color: var(--yellow);
+  color: var(--primary);
 }
