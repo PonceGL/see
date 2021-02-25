@@ -4,8 +4,7 @@ import AppContext from '../context/AppContext';
 import '../styles/components/Header.css';
 
 const Header = () => {
-  const { movies } = useContext(AppContext);
-  /*  console.log(movies); */
+  const { query, search, genders } = useContext(AppContext);
 
   return (
     <header>
@@ -24,20 +23,20 @@ const Header = () => {
               name="search"
               id="search"
               placeholder="Search"
+              value={query}
+              onChange={(e) => {
+                search(e.target.value);
+              }}
             />
           </label>
         </div>
       </section>
       <section className="Header-genders_container">
-        <button type="button">Acción</button>
-        <button type="button">Aventura</button>
-        <button type="button">Triler</button>
-        <button type="button">Acción</button>
-        <button type="button">Aventura</button>
-        <button type="button">Triler</button>
-        <button type="button">Acción</button>
-        <button type="button">Aventura</button>
-        <button type="button">Triler</button>
+        {genders.map((gender) => (
+          <button type="button" key={gender}>
+            {gender}
+          </button>
+        ))}
       </section>
     </header>
   );

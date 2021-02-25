@@ -13,8 +13,6 @@
 
 .Movies-container {
   width: 100%;
-  padding: 1rem 0;
-  margin-top: 1.5rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -71,7 +69,7 @@
   width: 80%;
   height: 1rem;
   margin: 0 auto;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }

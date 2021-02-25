@@ -74,6 +74,7 @@
   margin: 0 0.3rem;
   padding: 0.5rem;
   font-size: 1.5rem;
+  white-space: nowrap;
   background-color: var(--secondary);
   border: none;
   border-radius: 0.5rem;

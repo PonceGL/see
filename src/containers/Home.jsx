@@ -6,7 +6,12 @@ import Movies from '../components/Movies';
 import '../styles/containers/Home.css';
 
 const Home = () => {
-  const { movies } = useContext(AppContext);
+  const { moviesSearch } = useContext(AppContext);
+
+  const movies = moviesSearch.filter((gender, i) => {
+    return moviesSearch.indexOf(gender) === i;
+  });
+
   const moviesSlider = movies.slice(0, 5);
   const first = movies.slice(5, 15);
   const second = movies.slice(15, 25);
