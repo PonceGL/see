@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import FirebaseApp from '../utils/FirebaseApp';
 const URL = 'https://see-films-default-rtdb.firebaseio.com/movies.json';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState('');
+  const { nameUser, setNameUser, register } = FirebaseApp();
 
   useEffect(async () => {
     const response = await fetch(URL);
@@ -45,7 +47,16 @@ const Movies = () => {
     return allGenders.indexOf(gender) === i;
   });
 
-  return { movies, query, search, moviesSearch, genders };
+  return {
+    movies,
+    query,
+    search,
+    moviesSearch,
+    genders,
+    nameUser,
+    setNameUser,
+    register,
+  };
 };
 
 export default Movies;

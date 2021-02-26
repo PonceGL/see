@@ -14,7 +14,7 @@ const Footer = () => {
       <Link to="/">
         <img className="Footer-icon" src={bookmark} alt="bookmark icon" />
       </Link>
-      <Link to="/">
+      <Link to="/user/">
         <img className="Footer-icon" src={user} alt="user icon" />
       </Link>
     </footer>

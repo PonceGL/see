@@ -6,16 +6,11 @@
   align-items: center;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: both;
-  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 }
 .slider-container::-webkit-scrollbar {
   display: none;
 }
-
-/* .slider-container figure:first-child {
-  margin-left: 0.5rem;
-} */
 
 .slider-figure {
   min-width: 30rem;

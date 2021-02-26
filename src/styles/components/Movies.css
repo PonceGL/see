@@ -19,8 +19,7 @@
   align-items: flex-start;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: both;
-  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 }
 
 .Movies-container::-webkit-scrollbar {
