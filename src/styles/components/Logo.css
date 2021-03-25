@@ -1,0 +1,43 @@
+.Header_logo-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header_logo-container h1 {
+  display: flex;
+}
+
+.square {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.squareTwo {
+  transform: translateY(-5px);
+}
+.squareTree {
+  transform: translateY(5px);
+}
+
+.Header_search-container {
+  width: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .Header_logo-container {
+    width: 50%;
+  }
+
+  .square {
+    width: 5rem;
+    height: 5rem;
+    font-size: 4.5rem;
+  }
+}

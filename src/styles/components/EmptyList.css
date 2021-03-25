@@ -1,0 +1,23 @@
+.EmptyList-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.EmptyList-container p {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: var(--hover);
+  margin-top: 1rem;
+}
+
+.EmptyList-container span {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 700px) {
+  .emptylist-container {
+    padding: 10rem;
+  }
+}

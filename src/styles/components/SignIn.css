@@ -1,0 +1,120 @@
+.SignIn-title {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.SignIn-title h2 {
+  font-size: 3.5rem;
+  color: var(--hover);
+}
+
+.Form-SignIn-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.Form-SignIn {
+  width: 100%;
+  flex-direction: column;
+}
+
+.Form-SignIn label {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Form-SignIn input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--hover);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--tertiary);
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.Form-SignIn label .input-name {
+  text-transform: capitalize;
+}
+
+.button-SignIn {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-SignIn {
+  width: 5rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: blur(1rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(150deg) translateX(-5rem);
+  animation-name: glass;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes glass {
+  0% {
+    transform: skew(150deg) translateX(-5rem);
+  }
+  100% {
+    transform: skew(150deg) translateX(131rem);
+  }
+}
+
+.OrRegister-container {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+
+.OrRegister {
+  font-size: 1.4rem;
+}
+
+.OrRegister-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--tertiary);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  .signin-container {
+    padding: 10rem;
+  }
+}

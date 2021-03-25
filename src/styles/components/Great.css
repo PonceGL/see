@@ -1,0 +1,38 @@
+.Great {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.Great-card {
+  width: 100%;
+  flex-direction: column;
+}
+
+.Great-text {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--hover);
+  text-align: justify;
+}
+
+.Great-text span {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.Start-button {
+  display: block;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}

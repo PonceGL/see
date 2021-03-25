@@ -1,0 +1,42 @@
+.Header-genders_container {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.Header-genders_container::-webkit-scrollbar {
+  display: none;
+}
+
+.genders-buttons {
+  margin: 0 0.3rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.focus {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(255, 207, 84, 1) 11.2%,
+    rgba(255, 158, 27, 1) 91.1%
+  );
+  color: var(--primary);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .genders-buttons {
+    font-size: 1.8rem;
+  }
+}

@@ -6,6 +6,8 @@ import Home from '../containers/Home';
 import DetailsMovie from '../containers/DetailsMovie';
 import User from '../containers/User';
 import Register from '../containers/register';
+import WatchList from '../containers/WatchList';
+import MoviesByGenre from '../containers/MoviesByGenre';
 import NotFound from '../containers/NotFound';
 
 import AppContext from '../context/AppContext';
@@ -22,6 +24,8 @@ const App = () => {
             <Route exact path="/details/:id" component={DetailsMovie} />
             <Route exact path="/user/" component={User} />
             <Route exact path="/register/" component={Register} />
+            <Route exact path="/watchlist/" component={WatchList} />
+            <Route exact path="/gender/:id" component={MoviesByGenre} />
             <Route component={NotFound} />
           </Switch>
         </Layout>

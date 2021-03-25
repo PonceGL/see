@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -53,7 +57,9 @@ main {
   width: 100%;
   padding: 1rem;
   margin-bottom: 6.5rem;
+  display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 footer {
@@ -67,3 +73,11 @@ footer {
   bottom: 0;
   left: 0;
 }
+
+/* @media all and (orientation: portrait) {} */
+
+/* @media all and (orientation: landscape) {
+  body {
+    background-color: greenyellow;
+  }
+} */

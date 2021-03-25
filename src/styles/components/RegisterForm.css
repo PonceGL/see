@@ -1,0 +1,150 @@
+.Register-title {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.Register-title h2 {
+  font-size: 3.5rem;
+  color: var(--hover);
+}
+
+.Form-register_container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.Form-register {
+  width: 100%;
+  flex-direction: column;
+}
+
+.Form-register label {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Form-register input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--hover);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--tertiary);
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.Form-register input::placeholder {
+  font-size: 1rem;
+  color: var(--tertiary);
+}
+
+.Form-register .label-password {
+  position: relative;
+}
+
+.Form-register .label-password .view-password {
+  width: 2rem;
+  padding: 0.1rem;
+  position: absolute;
+  top: calc(70% - 1rem);
+  right: 1rem;
+  cursor: pointer;
+}
+
+.Form-register .label-password .view-password img {
+  width: 100%;
+}
+
+.Form-register label .input-name {
+  text-transform: capitalize;
+}
+
+.Error-mesage {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.2rem 0;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.button-regiter {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-glass {
+  width: 5rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: blur(1rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skew(150deg) translateX(-5rem);
+  animation-name: glass;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes glass {
+  0% {
+    transform: skew(150deg) translateX(-5rem);
+  }
+  100% {
+    transform: skew(150deg) translateX(131rem);
+  }
+}
+
+.OrSignIn-container {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+
+.OrSignIn {
+  font-size: 1.4rem;
+}
+
+.OrSignIn-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--tertiary);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  .register-container {
+    padding: 10rem;
+  }
+}

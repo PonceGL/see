@@ -1,0 +1,22 @@
+.Header_search-container input {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  color: var(--hover);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.Header_search-container input::placeholder {
+  color: var(--hover);
+}
+
+@media screen and (min-width: 700px) {
+  .Header_search-container input {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}

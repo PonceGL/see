@@ -1,3 +1,7 @@
+footer a {
+  padding: 0 1rem;
+  text-align: center;
+}
 .Footer-icon {
   width: 2rem;
 }

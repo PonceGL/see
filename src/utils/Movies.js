@@ -5,7 +5,24 @@ const URL = 'https://see-films-default-rtdb.firebaseio.com/movies.json';
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState('');
-  const { nameUser, setNameUser, register } = FirebaseApp();
+  const {
+    currentUserSession,
+    userPhotoSession,
+    setCurrentUserSession,
+    register,
+    errorRegisterMessage,
+    signin,
+    errorSignMessage,
+    registerWithGoogle,
+    getWatchList,
+    Logaut,
+    deleteUser,
+    watchList,
+    addWatchList,
+    deleteFromWatchlist,
+    isItOnMyList,
+    myWatch,
+  } = FirebaseApp();
 
   useEffect(async () => {
     const response = await fetch(URL);
@@ -34,7 +51,7 @@ const Movies = () => {
   };
   movies.filter(filtrar);
 
-  //obtener lista de generos sin repetidos
+  //Get list of genres without repeats
   const allGenders = [];
   const allArrayGenders = movies.map((movie) =>
     movie.genders.map((gender) => gender)
@@ -47,15 +64,36 @@ const Movies = () => {
     return allGenders.indexOf(gender) === i;
   });
 
+  //Remove yellow color from the buttons generators
+
+  const resetFocusButtons = () => {
+    const buttons = document.querySelectorAll('.genders-buttons');
+    buttons.forEach((button) => button.classList.remove('focus'));
+  };
+
   return {
     movies,
     query,
     search,
     moviesSearch,
     genders,
-    nameUser,
-    setNameUser,
+    resetFocusButtons,
+    currentUserSession,
+    userPhotoSession,
+    setCurrentUserSession,
     register,
+    errorRegisterMessage,
+    signin,
+    errorSignMessage,
+    registerWithGoogle,
+    getWatchList,
+    Logaut,
+    deleteUser,
+    watchList,
+    addWatchList,
+    deleteFromWatchlist,
+    isItOnMyList,
+    myWatch,
   };
 };
 

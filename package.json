@@ -19,6 +19,7 @@
   "author": "PonceGL",
   "license": "ISC",
   "dependencies": {
+    "@vidyard/embed-code": "^4.2.29",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",

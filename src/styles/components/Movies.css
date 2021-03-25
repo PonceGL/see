@@ -20,6 +20,8 @@
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+  /* ocultar scroll */
+  scrollbar-width: none;
 }
 
 .Movies-container::-webkit-scrollbar {

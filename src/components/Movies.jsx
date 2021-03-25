@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import AppContext from '../context/AppContext';
 import estrella from '../assets/estrella.svg';
 import '../styles/components/Movies.css';
 
 const Movies = ({ films, title }) => {
+  const { search } = useContext(AppContext);
   const qualificationOnStars = (qualification) => {
     let stars = [];
     for (let i = 0; i < Math.round(qualification) - 4; i++) {
@@ -14,7 +16,7 @@ const Movies = ({ films, title }) => {
 
   return (
     <section className="Movies">
-      <h2 className="Movies-title">{title}</h2>
+      {films.length > 0 ? <h2 className="Movies-title">{title}</h2> : ''}
       <div className="Movies-container">
         {films.map((movie, i) => (
           <figure className="Movies-figure" key={'Movies-image' + i}>
@@ -23,6 +25,10 @@ const Movies = ({ films, title }) => {
                 className="Movies-image"
                 src={movie.poster}
                 alt={movie.titles[0]}
+                loading="lazy"
+                onClick={() => {
+                  search('');
+                }}
               />
             </Link>
             <figcaption className="Movies-caption">

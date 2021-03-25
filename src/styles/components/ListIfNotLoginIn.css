@@ -1,0 +1,47 @@
+.Not-Login {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Not-Login_title {
+  font-size: 3.5rem;
+}
+
+.Not-Login p {
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.Not-Login_buttons {
+  width: 100%;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.Not-Login_button_user,
+.Not-Login_button_register {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--tertiary);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  .listIfNotLoginIn-container {
+    padding: 10rem;
+  }
+}

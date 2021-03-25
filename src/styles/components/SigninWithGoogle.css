@@ -1,0 +1,26 @@
+.Sign-in-with-Google-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.Sign-in-with-Google-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.Sign-in-with-Google-icon {
+  height: 1.3rem;
+  margin-right: 1rem;
+}
